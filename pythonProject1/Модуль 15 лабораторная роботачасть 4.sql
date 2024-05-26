@@ -93,5 +93,5 @@
 --FROM Departments DSE
 --JOIN Examinations E ON DSE.Id = E.DepartmentId
 --JOIN Diseases D ON E.DiseaseId = D.Id
---WHERE E.StartTime >= CURRENT_DATE - INTERVAL '6 months'::interval;
+-WHERE E.StartTime >= CURRENT_DATE - INTERVAL '6 months'::interval;
 
