@@ -89,9 +89,9 @@
 --ALTER TABLE Examinations ADD COLUMN DepartmentId INT
 --Виведіть назви відділень і назви захворювань, 
 --обстеження з яких вони проводили за останній півроку
-SELECT DSE.Name AS Department_Name, D.Name AS Disease_Name
-FROM Departments DSE
-JOIN Examinations E ON DSE.Id = E.DepartmentId
-JOIN Diseases D ON E.DiseaseId = D.Id
-WHERE E.StartTime >= CURRENT_DATE - INTERVAL '6 months'::interval;
+--SELECT DSE.Name AS Department_Name, D.Name AS Disease_Name
+--FROM Departments DSE
+--JOIN Examinations E ON DSE.Id = E.DepartmentId
+--JOIN Diseases D ON E.DiseaseId = D.Id
+--WHERE E.StartTime >= CURRENT_DATE - INTERVAL '6 months'::interval;
 
